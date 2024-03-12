@@ -5,12 +5,12 @@
             <!-- Logo can be added directly -->
         <!-- <img src="{{ asset('/img/logo/logo-white.svg') }}" alt="logo" /> -->
             <!-- Or added via css to provide different ones for different color themes -->
-            <div class="img"></div>
+            {{-- <div class="img"></div> --}}
         </a>
     </div>
     <!-- Logo End -->
     <!-- Language Switch Start -->
-    <div class="language-switch-container">
+    {{-- <div class="language-switch-container">
         <button class="btn btn-empty language-button dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">EN
         </button>
@@ -19,14 +19,14 @@
             <a href="#" class="dropdown-item active">EN</a>
             <a href="#" class="dropdown-item">ES</a>
         </div>
-    </div>
+    </div> --}}
     <!-- Language Switch End -->
     <!-- User Menu Start -->
     <div class="user-container d-flex">
         <a href="#" class="d-flex user position-relative" data-bs-toggle="dropdown" aria-haspopup="true"
            aria-expanded="false">
             <img class="profile" alt="profile" src="{{ asset('/img/profile/profile-9.jpg') }}"/>
-            <div class="name">Lisa Jackson</div>
+            <div class="name">Kodrat Pamungkas</div>
         </a>
         <div class="dropdown-menu dropdown-menu-end user-menu wide">
             <div class="row mb-3 ms-0 me-0">
@@ -129,12 +129,12 @@
                 <i data-cs-icon="search" data-cs-size="18"></i>
             </a>
         </li>
-        <li class="list-inline-item">
+        {{-- <li class="list-inline-item">
             <a href="#" id="pinButton" class="pin-button">
                 <i data-cs-icon="lock-on" class="unpin" data-cs-size="18"></i>
                 <i data-cs-icon="lock-off" class="pin" data-cs-size="18"></i>
             </a>
-        </li>
+        </li> --}}
         <li class="list-inline-item">
             <a href="#" id="colorButton">
                 <i data-cs-icon="light-on" class="light" data-cs-size="18"></i>
@@ -190,29 +190,37 @@
     <div class="menu-container flex-grow-1">
         <ul id="menu" class="menu">
             <li>
-                <a href="#dashboards" data-href="/Dashboards">
+                <a href="/Dashboards/Analytic" data-href="/Dashboards/Analytic">
                     <i data-cs-icon="home" class="icon" data-cs-size="18"></i>
-                    <span class="label">Dashboards</span>
+                    <span class="label">Dashboard</span>
                 </a>
-                <ul id="dashboards">
-                    <li>
-                        <a href="/Dashboards/Default">
-                            <span class="label">Default</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/Dashboards/Visual">
-                            <span class="label">Visual</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/Dashboards/Analytic">
-                            <span class="label">Analytic</span>
-                        </a>
-                    </li>
-                </ul>
             </li>
             <li>
+                <a href="/Pages/Blog/Home" data-href="/Blog">
+                    <i data-cs-icon="screen" class="icon" data-cs-size="18"></i>
+                    <span class="label">Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="/Apps/Chat" data-href="/Apps">
+                    <i data-cs-icon="screen" class="icon" data-cs-size="18"></i>
+                    <span class="label">Chat Konselor</span>
+                </a>
+            </li>
+            <li>
+                <a href="/Apps/Chat" data-href="/Apps">
+                    <i data-cs-icon="screen" class="icon" data-cs-size="18"></i>
+                    <span class="label">Asisten AI</span>
+                </a>
+            </li>
+            <li>
+                <a href="/Apps/Chat" data-href="/Apps">
+                    <i data-cs-icon="screen" class="icon" data-cs-size="18"></i>
+                    <span class="label">Q&A</span>
+                </a>
+            </li>
+
+            {{-- <li>
                 <a href="#apps" data-href="/Apps">
                     <i data-cs-icon="screen" class="icon" data-cs-size="18"></i>
                     <span class="label">Apps</span>
@@ -244,8 +252,8 @@
                         </a>
                     </li>
                 </ul>
-            </li>
-            <li>
+            </li> --}}
+            {{-- <li>
                 <a href="#pages" data-href="/Pages">
                     <i data-cs-icon="notebook-1" class="icon" data-cs-size="18"></i>
                     <span class="label">Pages</span>
@@ -840,7 +848,7 @@
                         </ul>
                     </li>
                 </ul>
-            </li>
+            </li> --}}
         </ul>
     </div>
     <!-- Menu End -->
